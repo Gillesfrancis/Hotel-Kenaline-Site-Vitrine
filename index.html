@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kenaline La Grâce Hôtel</title>
+    <meta name="description"
+        content="Kenaline La Grâce — Hôtel élégant à Yaoundé (Carrefour Carrière, Collège Monti). Chambres dès 15 000 FCFA, réservation 24/7 via WhatsApp." />
+    <meta name="theme-color" content="#C00022" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Kenaline La Grâce" />
+    <meta property="og:title" content="Kenaline La Grâce — Hôtel à Yaoundé" />
+    <meta property="og:description"
+        content="Chambres élégantes dès 15 000 FCFA — Carrefour Carrière (Collège Monti)." />
+    <meta property="og:type" content="hotel" />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kenaline La Grâce — Hôtel à Yaoundé" />
+    <meta name="twitter:description"
+        content="Chambres élégantes dès 15 000 FCFA — Carrefour Carrière (Collège Monti)." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/LOGO KENALINE.png" />
+
+    <!-- Styles (exemple lien externe CSS si besoin) -->
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Kenaline La Grâce",
+    "description": "Hôtel élégant à Yaoundé. Chambres dès 15 000 FCFA. Réservation 24/7 via WhatsApp.",
+    "telephone": "+237690000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrefour Carrière, vers le Collège Monti",
+      "addressLocality": "Yaoundé",
+      "addressCountry": "CM"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 3.8480,
+      "longitude": 11.5021
+    },
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+    "priceRange": "15000 FCFA",
+    "url": "."
+  }
+  </script>
+</head>
+
+<body class="page" data-theme="defaut">
+
+    <!-- BARRE D'ALERTE 
+    <<div class="barre-alerte">
+        <div class="conteneur">
+            <p><strong>Promo week-end :</strong> -10% pour réservations via WhatsApp !
+                <button id="fermerAlerte" class="btn-lien">×</button>
+            </p>
+        </div>
+    </div> -->
+
+    <!-- ENTETE -->
+    <header class="entete" id="entete">
+        <div class="conteneur entete-interieur">
+            <a class="logo" href="#accueil">Kenaline <span class="logo-sous">La Grâce</span></a>
+
+            <nav id="menu-principal" class="navigation" role="navigation">
+                <button id="toggle-menu" class="toggle-menu">Menu</button>
+                <ul id="liste-menu" class="liste-menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#chambres">Chambres & Tarifs</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#avis">Avis</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="cta-entete">
+                <!--<a href="#chambres" class="btn btn-secondaire">Voir les chambres</a> -->
+                <a id="btn-reserver-entete" class="btn btn-primaire" href="https://wa.me/237690000000">Réserver</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="accueil">
+
+        <!-- HERO -->
+        <section class="banniere" id="banniere">
+            <div class="banniere-media">
+                <video autoplay muted loop>
+                    <source src="videos/selimene hotel video.mp4" type="video/mp4" />
+                </video>
+                <div class="banniere-overlay"></div>
+            </div>
+
+            <div class="conteneur contenu-banniere">
+                <h1 class="titre-banniere"> L'hôtel Kenaline la Grace vous ouvre ses portes pour une expérience unique
+                </h1>
+                <p class="sous-banniere">
+                    Plongez dans une expérience unique entre luxe, sérénité et hospitalité camerounaise. Profitez de nos
+                    chambres modernes, de nos services premium et d’un cadre chaleureux pensé pour vous.
+
+                </p>
+
+                <div class="cta-banniere">
+                    <a href="#chambres" class="btn btn-secondaire">Voir les chambres</a>
+                    <a href="https://wa.me/237657447924" class="btn btn-primaire">Réserver sur WhatsApp</a>
+                    <a href="tel:+237657447924" class="btn btn-outline">Appeler</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAMBRES -->
+        <section id="chambres" class="section chambres">
+            <div class="conteneur">
+                <header class="tete-section">
+                    <h2 class="titre-section">Chambres & Tarifs</h2>
+                    <!--<p class="sous-section">Choisissez votre confort — filtres rapides pour trouver la chambre idéale.
+                    </p> -->
+                </header>
+
+                <div id="grille-chambres" class="grille chambres-grille">
+                    <article class="carte-chambre" data-type="Standard" data-prix="15000" data-capacite="2">
+                        <div class="media-chambre">
+                            <img src="images/LOGO KENALINE.png" alt="Chambre Standard — lit double, fenêtre" />
+                            <span class="badge">Meilleur prix</span>
+                        </div>
+                        <div class="corps-chambre">
+                            <h3 class="titre-chambre">Standard</h3>
+                            <p>Wi-Fi, Climatisation, TV</p>
+                            <div class="prix-chambre">Dès <strong>15 000 FCFA</strong></div>
+                            <div class="actions-chambre">
+                                <a href="https://wa.me/237657447924" class="btn btn-reserver">Réserver</a>
+                                <a href="#galerie" class="btn btn-clair">Voir la galerie</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="carte-chambre" data-type="Confort" data-prix="22000" data-capacite="2">
+                        <div class="media-chambre">
+                            <img src="images/LOGO KENALINE.png" alt="Chambre Confort — lit queen, bureau" />
+                            <span class="badge badge-accent">Populaire</span>
+                        </div>
+                        <div class="corps-chambre">
+                            <h3 class="titre-chambre">Confort</h3>
+                            <p>Petit-déj inclus, Coffre, Douche chaude</p>
+                            <div class="prix-chambre">Dès <strong>22 000 FCFA</strong></div>
+                            <div class="actions-chambre">
+                                <a href="https://wa.me/237657447924" class="btn btn-reserver">Réserver</a>
+                                <a href="#galerie" class="btn btn-clair">Voir la galerie</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="carte-chambre" data-type="Deluxe" data-prix="35000" data-capacite="3">
+                        <div class="media-chambre">
+                            <img src="images/LOGO KENALINE.png" alt="Chambre Deluxe — balcon, vue" />
+                        </div>
+                        <div class="corps-chambre">
+                            <h3 class="titre-chambre">Deluxe</h3>
+                            <p>Parking gratuit, Room service</p>
+                            <div class="prix-chambre">Dès <strong>35 000 FCFA</strong></div>
+                            <div class="actions-chambre">
+                                <a href="https://wa.me/237657447924" class="btn btn-reserver">Réserver</a>
+                                <a href="#galerie" class="btn btn-clair">Voir la galerie</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="carte-chambre" data-type="Suite" data-prix="60000" data-capacite="4">
+                        <div class="media-chambre">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                                alt="Suite — salon privé, lit king" />
+                            <span class="badge badge-premium">Suite</span>
+                        </div>
+                        <div class="corps-chambre">
+                            <h3 class="titre-chambre">Suite</h3>
+                            <p>Smart TV, Climatisation</p>
+                            <div class="prix-chambre">Dès <strong>60 000 FCFA</strong></div>
+                            <div class="actions-chambre">
+                                <a href="https://wa.me/237657447924" class="btn btn-reserver">Réserver</a>
+                                <a href="#galerie" class="btn btn-clair">Voir la galerie</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIE -->
+        <section id="galerie" class="section galerie">
+            <div class="conteneur">
+                <header class="tete-section galerie">
+                    <h2 class="titre-section">Galerie</h2>
+                    <p class="sous-section">Photos et courtes vidéos — faites défiler pour découvrir.</p>
+                </header>
+
+                <div class="swiper-conteneur">
+
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline></video>
+                        <source src="videos/selimene hotel video.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/vid kenqline .mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/bar.jpg" alt="bar de l'hotel" />
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/douche.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Baro.png" alt="bar de l'hotel" />
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/kana vid.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section services">
+            <div class="conteneur">
+                <header class="tete-section">
+                    <h2 class="titre-section">Services & Atouts</h2>
+                </header>
+
+                <ul class="grille-services">
+                    <li>Wi-Fi Gratuit</li>
+                    <li>Climatisation</li>
+                    <li>Parking sécurisé</li>
+                    <li>Petit-déjeuner</li>
+                    <li>Sécurité 24/7</li>
+                    <li>Réception 24/7</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- AVIS 
+        <<section id="avis" class="section avis">
+            <div class="conteneur">
+                <header class="tete-section">
+                    <h2 class="titre-section">Avis clients</h2>
+                </header>
+                <p><strong>Note moyenne :</strong> 4.6 / 5 (124 avis)</p>
+                <blockquote>"Excellent accueil et chambres propres."</blockquote>
+                <blockquote>"Très bon rapport qualité/prix. Wi-Fi fiable."</blockquote>
+            </div>
+        </section> -->
+
+        <!-- A PROPOS -->
+        <section id="apropos" class="section apropos">
+            <div class="conteneur">
+                <h2 class="titre-section">À propos</h2>
+                <p>Kenaline La Grâce est un établissement familial situé à <strong>Carrefour Carrière, vers le Collège
+                        Monti</strong>.</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section faq">
+            <div class="conteneur">
+                <h2 class="titre-section">FAQ</h2>
+                <details>
+                    <summary>Quelles sont les activités ou services disponibles sur place ?</summary>
+                    <p>L’hôtel dispose d’un restaurant, d’un bar lounge et d’espaces pour vos événements
+                        privés ou professionnels.</p>
+                </details>
+                <details>
+                    <summary>Le petit-déjeuner est-il inclus dans le prix de la chambre ?</summary>
+                    <p>Selon la formule choisie, le petit-déjeuner peut être inclus ou disponible en supplément.</p>
+                </details>
+                <details>
+                    <summary>Quelles méthodes de paiement acceptez-vous ?</summary>
+                    <p>Nous acceptons les cartes bancaires (Visa, MasterCard), les paiements mobiles (Orange Money, MTN
+                        Mobile Money) ainsi que les paiements en espèces.</p>
+                </details>
+                <details>
+                    <summary>L’hôtel dispose-t-il d’un parking ?</summary>
+                    <p>Oui, nous mettons à disposition un parking sécurisé gratuit pour nos clients.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <div class="conteneur">
+                <h2 class="titre-section">Contact & Réservation</h2>
+                <p><strong>Téléphone :</strong> <a style="color: #ff0000;" href="tel:+237657447924">+237 657 44 79
+                        24</a></p>
+                <p><strong>WhatsApp :</strong> <a style="color: #ff0000;" href="https://wa.me/237657447924">Messagerie
+                        WhatsApp</a></p>
+                <p><strong>Email :</strong> <a style="color: #ff0000;"
+                        href="mailto:kenalinelagracehotel@gmail.com">kenalinelagracehotel@gmail.com</a>
+                </p>
+                <iframe
+                    src="https://www.google.com/maps?q=Carrefour+Carri%C3%A8re+Coll%C3%A8ge+Monti+Yaound%C3%A9&output=embed"
+                    width="100%" height="300" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="pied-page">
+        <div class="conteneur">
+            <p>© <span id="annee"></span> Kenaline La Grâce — Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("annee").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
