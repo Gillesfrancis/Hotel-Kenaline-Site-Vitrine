@@ -58,7 +58,7 @@ body{
 .btn-primaire:hover{transform:translateY(-2px)}
 .btn-secondaire{background:transparent;border:1px solid rgba(16,24,40,0.06);color:var(--couleur-fond)}
 .btn-outline{background:transparent;border:1px solid var(--couleur-fond);color:var(--couleur-fond)}
-.btn-clair{background:#fff;border:1px solid rgba(16,24,40,0.04)}
+.btn-clair{background:#fff;border:1px solid rgba(16,24,40,0.04);color:var(--couleur-primaire);}
 
 /* Barre d’alerte */
 .barre-alerte{background:linear-gradient(90deg,var(--couleur-primaire),#8b0018);color:var(--couleur-blanc);padding:.5rem 0;font-weight:600}
@@ -136,3 +136,4 @@ body{
 
 /* Focus */
 a:focus, button:focus, input:focus, textarea:focus{outline:none;box-shadow:var(--focus)}
+
