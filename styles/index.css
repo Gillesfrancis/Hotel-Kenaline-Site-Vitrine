@@ -80,7 +80,7 @@ body{
 .galerie{margin-bottom: -30rem;}
 /* Chambres */
 .grille-chambres{display:grid;grid-template-columns:1fr;gap:1rem}
-.carte-chambre{background:var(--couleur-blanc);border-radius:12px;overflow:hidden;box-shadow:var(--ombre-douce);display:flex;flex-direction:column;transition:transform var(--transition)}
+.carte-chambre{background:var(--couleur-blanc);border-radius:12px;overflow:hidden;box-shadow:var(--ombre-douce);display:flex;flex-direction:column;transition:transform var(--transition);margin-top:1.3rem;}
 .carte-chambre:focus-within{box-shadow:0 10px 30px rgba(0,0,0,0.08)}
 .media-chambre{position:relative;height:180px;overflow:hidden}
 .media-chambre img{width:100%;height:100%;object-fit:cover;display:block}
@@ -136,4 +136,5 @@ body{
 
 /* Focus */
 a:focus, button:focus, input:focus, textarea:focus{outline:none;box-shadow:var(--focus)}
+
 
